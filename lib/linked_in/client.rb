@@ -10,7 +10,7 @@ module LinkedIn
 
     def initialize(ctoken=LinkedIn.token, csecret=LinkedIn.secret, options={})
       opts = {
-        :request_token_path => "/uas/oauth/requestToken",
+        :request_token_path => "/uas/oauth/requestToken?scope=r_network",
         :access_token_path  => "/uas/oauth/accessToken",
         :authorize_path     => "/uas/oauth/authorize"
       }
